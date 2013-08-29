@@ -73,6 +73,7 @@
       .agenda th,
       .agenda td {
         padding: 15px;
+        vertical-align: top;
         border: solid 1px #83AAF0;
         border-collapse: collapse;
       }
@@ -82,6 +83,17 @@
         vertical-align: middle;
         text-align: center;
         white-space: nowrap;
+      }
+
+      .accordion-group {
+        border: none;
+        -webkit-border-radius: 0px;
+           -moz-border-radius: 0px;
+                border-radius: 0px;
+      }
+
+      .accordion-heading .accordion-toggle {
+        padding: 0px;
       }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -127,40 +139,174 @@
 
       <p>イベントはアンカンファレンス形式で行います。アンカンファレンスとは、ほげほげほげほげです。詳しくは、こちらをご覧ください。</p>
       <br />
-      <p>開場 : 9:15</p>
-      <p>受付 : 9:30 - 10:00</p>
-      <div class="agenda">
+      <div class="agenda accordion">
       <table>
         <tbody>
           <tr>
-            <th>午前の部</th>
+            <th>開場</th>
+            <td>9:15
             <td>
-              10:00〜10:10&nbsp;&nbsp;開会あいさつ、主旨説明<br />
-              10:15～11:00&nbsp;&nbsp;アンカンファレンスのトピックを提案するライトニング･トーク(5分×9 〜 3分×15)<br />
-              11:00～11:30&nbsp;&nbsp;提案されたトピックを元に個別セッションのテーマを決定するディスカッション<br />
-            </td>
-          </tr>
           <tr>
-            <th>芋煮会（昼食）の部</th>
+            <th>受付
+            <td>9:30 - 10:00
             <td>
-              11:30〜13:00&nbsp;&nbsp;芋煮会を楽しみながら、交流を深めると共に、個別セッションへの勧誘や検討を行います。
-            </td>
-          </tr>
           <tr>
-            <th>午後の部</th>
+            <th rowspan="3">午前の部</th>
+            <td>10:00〜10:10
             <td>
-              13:00〜13:15&nbsp;&nbsp;テーマ見直し（最大15）、チーム分け、場所移動（3つ）<br />
-              13:15〜13:55&nbsp;&nbsp;セッション1<br />
-              13:55〜14:05&nbsp;&nbsp;休憩および移動<br />
-              14:05〜14:45&nbsp;&nbsp;セッション2<br />
-              14:45〜14:55&nbsp;&nbsp;休憩および移動<br />
-              14:55〜15:35&nbsp;&nbsp;セッション3<br />
-              15:35〜15:50&nbsp;&nbsp;休憩および移動、発表準備<br />
-              15:50〜16:45&nbsp;&nbsp;個別セッションの内容を発表（3〜5分×max15）<br />
-              16:45〜17:15&nbsp;&nbsp;全体質問<br />
-              17:15〜17:30&nbsp;&nbsp;まとめ・閉会あいさつ<br />
-            </td>
-          </tr>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseOpening">開会あいさつ、主旨説明</a>
+                </div>
+                <div id="collapseOpening" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>10:15～11:00
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseLightning">アンカンファレンスのトピックを提案するライトニング･トーク(5分×9 〜 3分×15)</a>
+                </div>
+                <div id="collapseLightning" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>11:00～11:30
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" href="#collapseTheme">提案されたトピックを元に個別セッションのテーマを決定するディスカッション</a>
+                </div>
+                <div id="collapseTheme" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <th>昼食の部</th>
+            <td>11:30〜13:00
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseImoni">芋煮会</a>
+                </div>
+                <div id="collapseImoni" class="accordion-body collapse">
+                  <div class="accordion-inner">芋煮会を楽しみながら、交流を深めると共に、個別セッションへの勧誘や検討を行います。</div>
+                </div>
+              </div>
+          <tr>
+            <th rowspan="10">午後の部</th>
+            <td>13:00〜13:15</td>
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapsePrepare1">テーマ見直し（最大15）、チーム分け、場所移動（3つ）</a>
+                </div>
+                <div id="collapsePrepare1" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>13:15〜13:55
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseSession1">セッション1</a>
+                </div>
+                <div id="collapseSession1" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>13:55〜14:05
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak1">休憩および移動</a>
+                </div>
+                <div id="collapseBreak1" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>14:05〜14:45
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseSession2">セッション2</a>
+                </div>
+                <div id="collapseSession2" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>14:45〜14:55
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak2">休憩および移動</a>
+                </div>
+                <div id="collapseBreak2" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>14:55〜15:35
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseSession3">セッション3</a>
+                </div>
+                <div id="collapseSession3" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>15:35〜15:50
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak3">休憩および移動、発表準備</a>
+                </div>
+                <div id="collapseBreak3" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>15:50〜16:45
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapsePresentation">個別セッションの内容を発表（3〜5分×max15）</a>
+                </div>
+                <div id="collapsePresentation" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>16:45〜17:15
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseQuestions">全体質問</a>
+                </div>
+                <div id="collapseQuestions" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
+          <tr>
+            <td>17:15〜17:30
+            <td>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" href="#collapseWrapUp">まとめ・閉会あいさつ</a>
+                </div>
+                <div id="collapseWrapUp" class="accordion-body collapse">
+                  <div class="accordion-inner">Agenda</div>
+                </div>
+              </div>
         </tbody>
       </table>
       </div>
