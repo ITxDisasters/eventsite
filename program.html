@@ -156,7 +156,9 @@
       <br />
       <div class="agenda accordion">
       <table>
+        <!--
         <p><a href="javascript:void(0);" onclick="$('.accordion-body').collapse('show');">すべてのアジェンダを開く</a> / <a href="javascript:void(0);" onclick="$('.accordion-body').collapse('hide');">すべてのアジェンダを閉じる</a> (現在、開く・閉じるの機能を一時的に切ってあります。戻すには html 中の "nocoppapse" を全て "collapse" に置換してください)</p>
+        -->
         <tbody>
           <tr>
             <th>開場</th>
@@ -339,5 +341,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <!-- hiding agenda -->
+    <script>$('.accordion-body').collapse('hide');</script>
   </body>
 </html>
