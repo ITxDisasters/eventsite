@@ -94,20 +94,9 @@
 
       .accordion-heading .accordion-toggle {
         padding: 0px;
-      } 
-
+      }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <style type="text/css">
-      .accordion-toggle {
-        cursor: default;
-      }
-      a:hover {
-         text-decoration: none;
-         color: #0088cc;
-      }
-    </style>
-
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -162,12 +151,15 @@
         <h1>プログラム<small>&nbsp;イベント当日の進行</small></h1>
       </div>
 
-      <p>イベントは「アンカンファレンス」形式で行います。「アンカンファレンス」とは「参加者全員で作り上げる」カンファレンスです。「相手の意見を否定しない」、「自由な発想・発言を歓迎する」、「参加者の立場は全てフラット」というのがルールです。「アンカンファレンス」について具体的に知りたい方は、<a href="http://2012.tokyo.wordcamp.org/unconference/">こちら</a>をご一読ください。</p>
+      <p>イベントは「アンカンファレンス」形式で行います。「アンカンファレンス」とは「参加者全員で作り上げる」カンファレンスです。「相手の意見を否定しない」、「自由な発想・発言を歓迎する」、「参加者の立場は全てフラット」というのがルールです。「アンカンファレンス」について具体的に知りたい方は、<a href="faq.html">よくある質問</a>や<a href="http://2012.tokyo.wordcamp.org/unconference/">こちらのページ</a>をご一読ください。</p>
       <br />
       <div class="agenda accordion">
       <table>
         <!--
-        <p><a href="javascript:void(0);" onclick="$('.accordion-body').collapse('show');">すべてのアジェンダを開く</a> / <a href="javascript:void(0);" onclick="$('.accordion-body').collapse('hide');">すべてのアジェンダを閉じる</a> (現在、開く・閉じるの機能を一時的に切ってあります。戻すには html 中の "nocoppapse" を全て "collapse" に置換してください)</p>
+        <p><a href="javascript:void(0);" onclick="$('.accordion-body').collapse('show');">すべてのアジェンダを開く</a> / <a href="javascript:void(0);" onclick="$('.accordion-body').collapse('hide');">すべてのアジェンダを閉じる</a></p>
+        -->
+        <!--
+          現在、開く・閉じるの機能を一時的に切ってあります。戻すには、このすぐ上のコメントアウトと <a>, </a> タグを囲っているコメントアウトを全部外してください。
         -->
         <tbody>
           <tr>
@@ -184,9 +176,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseOpening">開会あいさつ、主旨説明</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseOpening">-->
+                    開会あいさつ、主旨説明
+                  <!--</a>-->
                 </div>
-                <div id="collapseOpening" class="accordion-body nocollapse">
+                <div id="collapseOpening" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -195,9 +189,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseLightning">アンカンファレンスのトピックを提案するライトニング･トーク(5分×9 〜 3分×15)</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseLightning">-->
+                    アンカンファレンスのトピックを提案するライトニング･トーク(5分×9 〜 3分×15)
+                  <!--</a>-->
                 </div>
-                <div id="collapseLightning" class="accordion-body nocollapse">
+                <div id="collapseLightning" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -206,9 +202,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-<a class="accordion-toggle" data-toggle="nocollapse" href="#collapseTheme">提案されたトピックを元に個別セッションのテーマを決定するディスカッション</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseTheme">-->
+                    提案されたトピックを元に個別セッションのテーマを決定するディスカッション
+                  <!--</a>-->
                 </div>
-                <div id="collapseTheme" class="accordion-body nocollapse">
+                <div id="collapseTheme" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -218,9 +216,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseImoni">芋煮会</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseImoni">-->
+                    芋煮会
+                  <!--</a>-->
                 </div>
-                <div id="collapseImoni" class="accordion-body nocollapse">
+                <div id="collapseImoni" class="accordion-body collapse">
                   <div class="accordion-inner">芋煮会を楽しみながら、交流を深めると共に、個別セッションへの勧誘や検討を行います。</div>
                 </div>
               </div>
@@ -230,9 +230,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapsePrepare1">テーマ見直し（最大15）、チーム分け、場所移動（3つ）</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapsePrepare1">-->
+                    テーマ見直し（最大15）、チーム分け、場所移動（3つ）
+                  <!--</a>-->
                 </div>
-                <div id="collapsePrepare1" class="accordion-body nocollapse">
+                <div id="collapsePrepare1" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -241,9 +243,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseSession1">セッション1</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseSession1">-->
+                    セッション1
+                  <!--</a>-->
                 </div>
-                <div id="collapseSession1" class="accordion-body nocollapse">
+                <div id="collapseSession1" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -252,9 +256,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseBreak1">休憩および移動</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak1">-->
+                    休憩および移動
+                  <!--</a>-->
                 </div>
-                <div id="collapseBreak1" class="accordion-body nocollapse">
+                <div id="collapseBreak1" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -263,9 +269,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseSession2">セッション2</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseSession2">-->
+                    セッション2
+                  <!--</a>-->
                 </div>
-                <div id="collapseSession2" class="accordion-body nocollapse">
+                <div id="collapseSession2" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -274,9 +282,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseBreak2">休憩および移動</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak2">-->
+                    休憩および移動
+                  <!--</a>-->
                 </div>
-                <div id="collapseBreak2" class="accordion-body nocollapse">
+                <div id="collapseBreak2" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -285,9 +295,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseSession3">セッション3</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseSession3">-->
+                    セッション3
+                  <!--</a>-->
                 </div>
-                <div id="collapseSession3" class="accordion-body nocollapse">
+                <div id="collapseSession3" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -296,9 +308,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseBreak3">休憩および移動、発表準備</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseBreak3">-->
+                    休憩および移動、発表準備
+                  <!--</a>--<
                 </div>
-                <div id="collapseBreak3" class="accordion-body nocollapse">
+                <div id="collapseBreak3" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -307,9 +321,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapsePresentation">個別セッションの内容を発表（3〜5分×max15）</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapsePresentation">-->
+                    個別セッションの内容を発表（3〜5分×max15）
+                  <!--</a>-->
                 </div>
-                <div id="collapsePresentation" class="accordion-body nocollapse">
+                <div id="collapsePresentation" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -318,9 +334,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseQuestions">全体質問</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseQuestions">-->
+                    全体質問
+                  <!--</a>-->
                 </div>
-                <div id="collapseQuestions" class="accordion-body nocollapse">
+                <div id="collapseQuestions" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -329,9 +347,11 @@
             <td>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="nocollapse" href="#collapseWrapUp">まとめ・閉会あいさつ</a>
+                  <!--<a class="accordion-toggle" data-toggle="collapse" href="#collapseWrapUp">-->
+                    まとめ・閉会あいさつ
+                  <!--</a>-->
                 </div>
-                <div id="collapseWrapUp" class="accordion-body nocollapse">
+                <div id="collapseWrapUp" class="accordion-body collapse">
                   <div class="accordion-inner">Agenda</div>
                 </div>
               </div>
@@ -351,7 +371,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <!-- hiding agenda -->
-    <script>$('.accordion-body').collapse('hide');</script>
   </body>
 </html>
