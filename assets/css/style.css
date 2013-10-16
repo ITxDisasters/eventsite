@@ -146,7 +146,7 @@ strong { font-weight: bold; }
     line-height: 24px;
     color: #eaeaea;
     text-align: left;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 
@@ -157,7 +157,7 @@ strong { font-weight: bold; }
 }
 
 .presentation h2 {
-    font-family: 'Lobster', cursive;
+    /*font-family: 'Lobster', cursive;*/
     font-size: 30px;
     color: #5d5d5d;
 }
@@ -574,7 +574,7 @@ footer .social a:hover { background-position: left top; }
     display: inline;
     margin-left: 5px;
     font-size: 14px;
-    font-style: italic;
+    /*font-style: italic;*/
     vertical-align: middle;
 }
 
