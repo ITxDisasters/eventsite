@@ -50,7 +50,8 @@ jQuery(document).ready(function() {
 */
 $(document).ready(function() {
     $('.flickr-feed').jflickrfeed({
-        limit: 8,
+        // limit: 8,
+        limit: 16,
         qstrings: {
             // id: '52617155@N08'
             tags: "itxsaigai"
