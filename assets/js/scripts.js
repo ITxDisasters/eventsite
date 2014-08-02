@@ -53,7 +53,7 @@ $(document).ready(function() {
         // limit: 8,
         limit: 16,
         qstrings: {
-            // id: '52617155@N08'
+            id: '34597916@N00',
             tags: "itxsaigai"
         },
         itemTemplate: '<li><a href="{{link}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
