@@ -202,19 +202,19 @@
               <script type="text/javascript">
               window.onload = function(){
                 var ymap = new Y.Map("map",{configure:{doubleClickZoom:true,enableOpenStreetMap:true}});
-                var label1 = new Y.Label(new Y.LatLng(35.66304593217218,139.6766591704303), "昼食会場（予定）");
+                // var label1 = new Y.Label(new Y.LatLng(35.66304593217218,139.6766591704303), "昼食会場（予定）");
                 var label2 = new Y.Label(new Y.LatLng(35.66107592300544,139.67745578650815), "「IT×災害」会議 会場");
-                var icon1 = new Y.Icon('http://i.yimg.jp/images/map/yy/images/icon/yy_aicon_06_32pix.gif');
+                // var icon1 = new Y.Icon('http://i.yimg.jp/images/map/yy/images/icon/yy_aicon_06_32pix.gif');
                 var icon2 = new Y.Icon('http://i.yimg.jp/images/map/yy/images/icon/yy_aicon_10_32pix.gif');
-                var marker1 = new Y.Marker(new Y.LatLng(35.66304593217218,139.6766591704303),{icon:icon1});
+                // var marker1 = new Y.Marker(new Y.LatLng(35.66304593217218,139.6766591704303),{icon:icon1});
                 var marker2 = new Y.Marker(new Y.LatLng(35.66107592300544,139.67745578650815),{icon:icon2});
 
                 ymap.drawMap(new Y.LatLng(35.66220912005742, 139.67717951897964), 18, Y.LayerSetId.OSM);
                 ymap.addControl(new Y.ZoomControl());
                 ymap.addControl(new Y.ScaleControl());
-                ymap.addFeature(label1);
+                // ymap.addFeature(label1);
                 ymap.addFeature(label2);
-                ymap.addFeature(marker1);
+                // ymap.addFeature(marker1);
                 ymap.addFeature(marker2);
               }
               </script>
