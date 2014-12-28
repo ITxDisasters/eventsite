@@ -14,22 +14,22 @@ $(window).load(function() {
 */
 jQuery(document).ready(function() {
     $clientsHolder = $('ul.portfolio-img');
-    $clientsClone = $clientsHolder.clone(); 
- 
+    $clientsClone = $clientsHolder.clone();
+
     $('.filter-portfolio a').click(function(e) {
         e.preventDefault();
         $filterClass = $(this).attr('class');
- 
+
         $('.filter-portfolio a').attr('id', '');
         $(this).attr('id', 'active-imgs');
- 
+
         if($filterClass == 'all'){
             $filters = $clientsClone.find('li');
         }
         else {
             $filters = $clientsClone.find('li[data-type~='+ $filterClass +']');
         }
- 
+
         $clientsHolder.quicksand($filters, {duration: 700}, function() {
             $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
         });
@@ -53,8 +53,9 @@ $(document).ready(function() {
         // limit: 8,
         limit: 16,
         qstrings: {
-            id: '34597916@N00',
-            tags: "itxsaigai"
+            id: '127826948@N07', // https://www.flickr.com/photos/127826948@N07/
+            // tags: "itxsaigai"
+            tags: ""
         },
         itemTemplate: '<li><a href="{{link}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
     });
@@ -68,9 +69,9 @@ jQuery(document).ready(function() {
     var position = new google.maps.LatLng(45.067883, 7.687231);
     $('.map').gmap({'center': position,'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
             var self = this;
-            self.addMarker({'position': this.get('map').getCenter() });	
+            self.addMarker({'position': this.get('map').getCenter() });
         }
-    }); 
+    });
 });
 
 
